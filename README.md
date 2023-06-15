@@ -24,7 +24,7 @@ To run the Todo website locally, follow these steps:
 
 1. Clone the repository:
 
-   git clone https://github.com/mldias23i/todo-website.git
+   git clone [https://github.com/mldias23i/todo-website.git](https://github.com/mldias23i/django3-TodoWebSite.git)
    
 2. Install the necessary dependencies:
 
