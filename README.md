@@ -28,7 +28,7 @@ To run the Todo website locally, follow these steps:
    
 2. Install the necessary dependencies:
 
-   cd todo-website
+   cd todo_website
    pip install -r requirements.txt
    
 3. Run the development server:
