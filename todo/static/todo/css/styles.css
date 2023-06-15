@@ -1,0 +1,28 @@
+/* Hide the content initially */
+.hide-content {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s, transform 1s;
+}
+
+/* Define the fade-in animation */
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply the fade-in animation to the heading */
+  .animated-heading {
+    animation: fade-in 1s ease-out forwards;
+  }
+  
+/* Apply the fade-in animation to the paragraph with a delay */
+  .animated-paragraph {
+    animation: fade-in 1s ease-out 0.5s forwards;
+  }

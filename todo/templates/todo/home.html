@@ -1,0 +1,42 @@
+{% extends 'todo/base.html' %}
+
+
+{% block content %}
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="row justify-content-center mt-5">
+    <div class="col-md-7 text-center">
+        <h1 class="animated-heading hide-content">Simplify Your Life with TaskTracker!</h1>
+        <!-- Introduction paragraph -->
+        <p class="animated-paragraph hide-content">Life is full of excitement, but it can also get overwhelmingly busy. With countless tasks and opportunities
+             vying for your attention, it's essential to focus on what truly matters. Introducing TaskTracker, your ultimate
+              solution for bringing order to chaos and unlocking the life you've always envisioned.
+        </p>
+        <!-- Benefits paragraph 1 -->
+        <p class="animated-paragraph hide-content">
+            Discover the joy of an organized and purpose-driven existence. TaskTracker empowers you to streamline 
+            your tasks, declutter your mind, and seize every opportunity that aligns with your priorities. 
+            Embrace a newfound sense of clarity and productivity as you effortlessly manage your to-dos, one task 
+            at a time.
+        </p>
+        <!-- Benefits paragraph 2 -->
+        <p class="animated-paragraph hide-content">    
+            Experience the satisfaction of achieving your goals, pursuing your passions, and living life to the 
+            fullest. TaskTracker is your trusted companion, supporting you on your journey to a more intentional 
+            and fulfilling life. Start exploring the possibilities today and unlock the full potential of your 
+            organized, balanced, and joyful existence.
+        </p>
+        <!-- Conclusion paragraph -->
+        <p class="animated-paragraph hide-content">    
+            Your organized and blissful life awaits. Embrace the power of TaskTracker!</p>
+        </p>
+        <!-- Start button -->
+        <a role="button" class="btn btn-primary btn-lg animated-paragraph hide-content" href="{% url 'signupUser' %}">Start</a>
+    </div>
+</div>
+
+{% endblock %}

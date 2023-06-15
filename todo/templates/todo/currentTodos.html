@@ -1,0 +1,38 @@
+{% extends 'todo/base.html' %}
+
+
+{% block content %}
+<div class="row justify-content-center mt-5">
+    <div class="col-md-10">
+        {% if todos %}
+            <!-- Display the number of current todos if any -->
+            <h1>{{ todos.count }} Current Todo{{ todos.count|pluralize }}</h1>
+        {% else %}
+            <!-- Display a default heading if no todos exist -->
+            <h1>Current Todos</h1>
+        {% endif %}
+    </div>
+</div>
+
+<div class="row justify-content-center mt-5">
+    <div class="col-md-10">
+    {% if todos %}
+        <!-- Display the list of todos -->
+        <div class="list-group">
+            {% for todo in todos %}
+                <!-- Link to view individual todo with optional memo -->
+                <a href="{% url 'viewtodo' todo.id %}" class="list-group-item list-group-item-action{% if todo.important %} list-group-item-danger{% endif %}"><b>{{ todo.title }}</b>{% if todo.memo %} - {{ todo.memo|truncatechars:30 }}{% endif %}</a>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="text-center">
+            <!-- Display a message when no todos exist -->
+            <h2>Looks like you don't have any todos! Nice work.</h2>
+        <br>
+        <!-- Provide a button to create a new todo -->
+        <a role="button" class="btn btn-primary" href="{% url 'createTodo' %}">New Todo</a>
+        </div>
+    {% endif %}
+    </div>
+</div>
+{% endblock %}
