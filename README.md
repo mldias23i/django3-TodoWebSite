@@ -24,7 +24,7 @@ To run the Todo website locally, follow these steps:
 
 1. Clone the repository:
 
-   git clone https://github.com/your-username/todo-website.git
+   git clone https://github.com/mldias23i/todo-website.git
    
 2. Install the necessary dependencies:
 
